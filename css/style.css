@@ -1,0 +1,221 @@
+body {
+    font-size: 12pt;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+}
+
+article {
+    padding: 10pt;
+}
+
+article > section.timeline-item {
+    box-shadow: 1px 3px 5px 0.00px rgba(0, 0, 0, 0.13);
+    border-color: #e6e6e6;
+    border-style: solid;
+    border-width: 1px;
+    margin: 5pt;
+    padding: 10pt;
+}
+
+article > section.timeline-item h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+article > section.timeline-item p {
+    margin: 0px;
+    padding: 15px;
+}
+
+
+#menu {
+    text-align: center;
+}
+#menu nav img {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 700px)  {
+    
+    #main-page {
+        width: 100%;
+        margin: 0px;
+        display: block;   
+    }
+    
+    #menu {
+        display: none;
+        position: absolute;
+        left: 0%;
+        height: 100%;
+        
+        top: 42px;
+        background-color: #fff;
+        box-shadow: 1px 3px 5px 0.00px rgba(0, 0, 0, 0.13);
+        
+        
+        
+    }
+    
+    #content, #menu {
+        /* new idea */
+        float:  none;
+        display: block;
+    }
+    
+    #menu {
+        display: none;
+    }
+    
+    header {
+        background-color: #fff;
+        box-shadow: 1px 3px 5px 0.00px rgba(0, 0, 0, 0.13);
+        line-height: 30px;
+        display: block;
+        padding: 0px;
+        margin: 0px;
+        height: 42px;
+    }
+    
+    header > button {
+        background-color: #fff;
+        background-color: transparent;
+        border: 0px;
+        transition: all 0.4s;
+    }
+    
+    header > button:hover {
+        background-color: #d5fcfc;
+    }
+    
+    header > button > img {
+        height: 30px;
+        margin: 5px;
+        line-height: 30px;
+        vertical-align: middle;
+    }
+    
+    header > h1 {
+        font-size: 16pt;
+        display:  inline-block;
+        margin: 5px;
+        padding: 0px;
+        line-height: 30px;
+        vertical-align: middle;
+    }
+    
+}
+
+@media only screen and (min-width: 700px) {
+    html, body {
+        font-size: 12pt;
+        margin: 0px;
+        padding: 0px;
+        min-height: 100% !important;
+    }
+    
+    header {
+        display: none;
+    }
+    
+    #main-page {
+        width: 700px;
+        margin: 0px auto;
+
+        display: -webkit-box;
+        display: -moz-box;
+        display: -o-box;
+        display: -ms-box;
+        display: box;
+
+        -webkit-box-orient: horizontal;
+        -moz-box-orient: horizontal;
+        -o-box-orient: horizontal;
+        -ms-box-orient: horizontal;
+        box-orient: horizontal;
+        
+        /* new idea */
+        display: block;
+        
+    }
+    
+    #content {
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -o-box-flex: 1;
+        -ms-box-flex: 1;
+        box-flex: 1;
+        
+        width: 500px;
+        
+        /* new idea */
+        float:  left;
+        display: block;
+    }
+    
+    #menu {
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -o-box-flex: 1;
+        -ms-box-flex: 1;
+        box-flex: 1;
+        width: 200px !important;
+        
+        display: block !important;
+        height: 100%;   
+        background-color: #fff;
+        padding: 10pt;
+        text-align: center;
+        
+        
+        
+        /* new idea */
+        float:  right;
+        display: block;
+        left: 0px;
+    }
+    
+    #menu > #sidebar {
+        height: auto !important;
+        height: 100%;
+        min-height: 100%;
+        display: block;
+        
+        
+        
+    }
+    
+    #menu nav {        
+        padding-left: 10px;
+        position: absolute;
+        bottom: 0px;
+        height: 100%;
+        border-left: 1px solid #9a9a9a;
+        width: 200px;
+        
+        color: #000000;
+        font: 400 14px "myriad-pro",sans-serif;
+    }
+    
+    
+    
+    
+    
+}
+
+
+@media only screen and (min-width: 900px) {
+    #main-page {
+        width: 900px !important;
+    }
+    
+    #content {        
+        width: 700px;
+    }
+    
+    #menu {        
+        width: 200px;
+    }
+}
