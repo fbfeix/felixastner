@@ -5,6 +5,16 @@ body {
     min-height: 100%;
 }
 
+a, a:visited {
+    color: #237efa;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+a:hover {
+    color: #007c93;
+}
+
 article {
     padding: 10pt;
 }
@@ -33,7 +43,25 @@ article > section.timeline-item p {
     text-align: center;
 }
 #menu nav img {
-    margin-top: 20px;
+    margin-top: 50px;
+}
+
+
+
+
+a.more-link {
+    display: block;
+    padding-top: 10px;
+}
+
+img.wp-post-image {
+    max-width: 100%;
+}
+
+
+ins.adsbygoogle {
+    display: block !important;
+    margin: 20px 5px;
 }
 
 
